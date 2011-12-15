@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Sublime Text 2
+GenericName=Sublime
+Exec=sublime
+Icon=ICON_FILE
+StartupNotify=true
+Categories=GNOME;GTK;

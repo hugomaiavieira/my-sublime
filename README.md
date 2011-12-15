@@ -1,0 +1,7 @@
+# my-sublime
+
+This is just my configuration files for Sublime Text.
+
+It has an install script that just complement the Sublime Text installation and
+expect that it is already installed and you have executed at least once. This
+install script was tested on Ubuntu 11.04.
