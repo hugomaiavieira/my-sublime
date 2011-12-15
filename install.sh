@@ -32,18 +32,23 @@
 #
 
 # Black magic to get the folder where the script is running
-FOLDER=$(cd $(dirname $0); pwd -P)
+# FOLDER=$(cd $(dirname $0); pwd -P)
 
-SUBLIME_EXEC=$(locate sublime_text)
-CONFIG_DIR="$HOME/.config/sublime-text-2"
+# SUBLIME_EXEC=$(locate sublime_text)
+# CONFIG_DIR="$HOME/.config/sublime-text-2"
 
-# create the link
-cd /usr/local/bin
-sudo ln -s "$SUBLIME_EXEC" sublime
+# # create the link
+# cd /usr/local/bin
+# sudo ln -s "$SUBLIME_EXEC" sublime
 
-# add icon
-sudo cp $FOLDER/sublime.desktop /usr/share/applications
-sudo sed -i s,ICON_FILE,$CONFIG_DIR/Packages/Default/Icon.png, /usr/share/applications/sublime.desktop
+# # add icon
+# sudo cp $FOLDER/sublime.desktop /usr/share/applications
+# sudo sed -i s,ICON_FILE,$CONFIG_DIR/Packages/Default/Icon.png, /usr/share/applications/sublime.desktop
 
-# copy packages
-cp -r $FOLDER/Packages $CONFIG_DIR/Packages
+# # copy packages
+# cp -r $FOLDER/Packages $CONFIG_DIR/Packages
+
+# set as default text editor
+sed -i s,text/plain=.*,text/plain=sublime.desktop, $HOME/.local/share/applications/mimeapps.list
+sed -i s,text/x-csrc=.*,text/x-csrc=sublime.desktop, $HOME/.local/share/applications/mimeapps.list
+sed -i s,application/x-shellscript=.*,application/x-shellscript=sublime.desktop, $HOME/.local/share/applications/mimeapps.list
