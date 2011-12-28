@@ -42,14 +42,11 @@ cd /usr/local/bin
 sudo ln -s "$SUBLIME_EXEC" sublime
 
 # add icon
+sudo cp $FOLDER/sublime.png /usr/share/pixmaps
 sudo cp $FOLDER/sublime.desktop /usr/share/applications
-sudo sed -i s,ICON_FILE,$CONFIG_DIR/Packages/Default/Icon.png, /usr/share/applications/sublime.desktop
 
 # copy packages
 cp -r $FOLDER/Packages $CONFIG_DIR/Packages
 
 # set as default text editor
-MIMEAPPS_FILE="$HOME/.local/share/applications/mimeapps.list"
-sed -i s,text/plain=.*,text/plain=sublime.desktop, $MIMEAPPS_FILE
-sed -i s,text/x-csrc=.*,text/x-csrc=sublime.desktop, $MIMEAPPS_FILE
-sed -i s,application/x-shellscript=.*,application/x-shellscript=sublime.desktop, $MIMEAPPS_FILE
+sudo sed -i s,gedit,sublime, /etc/gnome/defaults.list

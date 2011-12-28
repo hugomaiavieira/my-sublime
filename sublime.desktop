@@ -1,9 +1,11 @@
 [Desktop Entry]
-Encoding=UTF-8
+Name=Sublime Text
+GenericName=Sublime Text Editor
+Comment=Edit text files
+Exec=sublime %U
+Terminal=false
 Type=Application
-Name=Sublime Text 2
-GenericName=Sublime
-Exec=sublime
-Icon=ICON_FILE
 StartupNotify=true
-Categories=GNOME;GTK;
+MimeType=text/plain;
+Icon=/usr/share/pixmaps/sublime.png
+Categories=GNOME;GTK;Utility;TextEditor;
