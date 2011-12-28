@@ -37,6 +37,9 @@ FOLDER=$(cd $(dirname $0); pwd -P)
 SUBLIME_EXEC=$(locate sublime_text)
 CONFIG_DIR="$HOME/.config/sublime-text-2"
 
+# install system dependencie to fix 'no module_path: "pixmap"' warning
+sudo apt-get install -y gtk2-engines-pixbuf
+
 # create the link
 cd /usr/local/bin
 sudo ln -s "$SUBLIME_EXEC" sublime
