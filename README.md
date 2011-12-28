@@ -11,3 +11,4 @@ install script was tested on Ubuntu 11.04 and 11.10.
 * Integrate sublime with the desktop and terminal enviroment
 * Add some settings configuration
 * Add Brazilian Portuguese dictonary
+* Add slim syntax highlighting
