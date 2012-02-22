@@ -34,6 +34,7 @@
 # Black magic to get the folder where the script is running
 FOLDER=$(cd $(dirname $0); pwd -P)
 
+sudo updatedb
 SUBLIME_EXEC=$(locate sublime_text)
 CONFIG_DIR="$HOME/.config/sublime-text-2"
 
