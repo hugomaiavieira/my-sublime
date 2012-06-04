@@ -34,7 +34,9 @@
 # Black magic to get the folder where the script is running
 FOLDER=$(cd $(dirname $0); pwd -P)
 
-SUBLIME_EXEC=$(locate sublime_text)
+sudo updatedb
+SUBLIME_EXEC=$(locate --regex "sublime_text$")
+SUBLIME_ICON=$(locate --regex "/Icon/256x256/sublime_text.png$")
 CONFIG_DIR="$HOME/.config/sublime-text-2"
 
 # install system dependencie to fix 'no module_path: "pixmap"' warning
@@ -42,14 +44,16 @@ sudo apt-get install -y gtk2-engines-pixbuf
 
 # create the link
 cd /usr/local/bin
+chmod +x "$SUBLIME_EXEC"
 sudo ln -s "$SUBLIME_EXEC" sublime
 
 # add icon
-sudo cp $FOLDER/sublime.png /usr/share/pixmaps
-sudo cp $FOLDER/sublime.desktop /usr/share/applications
+sudo cp "$SUBLIME_ICON" /usr/share/pixmaps
+sudo chmod 644 /usr/share/pixmaps/sublime_text.png
+sudo cp "$FOLDER"/sublime.desktop /usr/share/applications
 
 # copy packages
-cp -r $FOLDER/Packages $CONFIG_DIR/Packages
+cp -r "$FOLDER"/Packages "$CONFIG_DIR"/Packages
 
 # set as default text editor
 sudo sed -i s,gedit,sublime, /etc/gnome/defaults.list
