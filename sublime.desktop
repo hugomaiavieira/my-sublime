@@ -7,5 +7,5 @@ Terminal=false
 Type=Application
 StartupNotify=true
 MimeType=text/plain;
-Icon=/usr/share/pixmaps/sublime_text.png
-Categories=GNOME;GTK;Utility;TextEditor;
+Icon=/home/hugo/install/Sublime Text 2/Icon/256x256/sublime_text.png
+Categories=TextEditor;IDE;Development
