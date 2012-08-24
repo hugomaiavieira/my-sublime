@@ -28,5 +28,9 @@
   // tab character - this allows tabs to be inserted when tab_completion is
   // enabled. Set this to true to make shift+tab always unindent, instead of
   // inserting tabs.
-  "shift_tab_unindent": true
+  "shift_tab_unindent": true,
+
+  // Set to "none" to turn off drawing white space, "selection" to draw only the
+  // white space within the selection, and "all" to draw all white space
+  "draw_white_space": "all",
 }
