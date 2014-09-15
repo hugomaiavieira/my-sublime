@@ -1,36 +1,14 @@
-// Settings in here override those in "Default/Base File.sublime-settings", and
-// are overridden in turn by file type specific settings. Place your settings
-// here, to ensure they're preserved when upgrading.
 {
-  "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
-  "font_size": 11.0,
-
   "dictionary": "Packages/Language - Portuguese/pt_BR.dic",
-  "spell_check": false,
-
-  // Columns in which to display vertical rulers
-  "rulers": [80],
-
-  // Set to false to disable highlighting any line with a caret
+  "draw_white_space": "all",
+  "font_face": "Source Code Pro",
   "highlight_line": true,
-
-  // The number of spaces a tab is considered equal to
+  "rulers":
+  [
+    80
+  ],
+  "spell_check": false,
   "tab_size": 2,
-
-  // Set to true to insert spaces when tab is pressed
   "translate_tabs_to_spaces": true,
-
-  // Set to true to removing trailing white space on save
-  "trim_trailing_white_space_on_save": true,
-
-  // By default, shift+tab will only unindent if the selection spans
-  // multiple lines. When pressing shift+tab at other times, it'll insert a
-  // tab character - this allows tabs to be inserted when tab_completion is
-  // enabled. Set this to true to make shift+tab always unindent, instead of
-  // inserting tabs.
-  "shift_tab_unindent": true,
-
-  // Set to "none" to turn off drawing white space, "selection" to draw only the
-  // white space within the selection, and "all" to draw all white space
-  "draw_white_space": "all"
+  "trim_trailing_white_space_on_save": true
 }

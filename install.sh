@@ -2,7 +2,7 @@
 #
 # This script just complement the Sublime Text installation and expect that it
 # is already installed.
-# Sublime Text can be downloaded on http://www.sublimetext.com/2
+# Sublime Text can be downloaded on http://www.sublimetext.com/3
 #
 # ------------------------------------------------------------------------------
 #
@@ -34,20 +34,7 @@
 # Black magic to get the folder where the script is running
 FOLDER=$(cd $(dirname $0); pwd -P)
 
-sudo updatedb
-SUBLIME_EXEC=$(locate --regex "sublime_text$")
-CONFIG_DIR="$HOME/.config/sublime-text-2"
-
-# create the link
-cd /usr/local/bin
-chmod +x "$SUBLIME_EXEC"
-sudo ln -s "$SUBLIME_EXEC" sublime
-
-# add desktop integration
-sudo cp "$FOLDER"/sublime.desktop /usr/share/applications
+CONFIG_DIR="$HOME/.config/sublime-text-3"
 
 # copy packages
 cp -r "$FOLDER"/Packages/* "$CONFIG_DIR"/Packages
-
-# set as default text editor
-sudo sed -i s,gedit,sublime, /etc/gnome/defaults.list

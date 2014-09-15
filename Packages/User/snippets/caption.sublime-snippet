@@ -1,6 +1,0 @@
-<snippet>
-  <content><![CDATA[
-<span class="caption">${1:text}</span>
-]]></content>
-  <tabTrigger>cap</tabTrigger>
-</snippet>
