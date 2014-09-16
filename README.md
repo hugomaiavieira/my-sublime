@@ -27,6 +27,7 @@ $ bash install.sh
 - [Sidebar Enhancements](https://sublime.wbond.net/packages/SideBarEnhancements)
 - [Alignment](http://wbond.net/sublime_packages/alignment)
 - [Color​Picker](https://sublime.wbond.net/packages/ColorPicker)
+- [Git](https://sublime.wbond.net/packages/Git)
 - [GitGutter](https://sublime.wbond.net/packages/GitGutter)
 - [Pretty JSON](https://sublime.wbond.net/packages/Pretty%20JSON)
 - [Inline Google Translate](https://sublime.wbond.net/packages/Inline%20Google%20Translate)
