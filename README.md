@@ -16,17 +16,24 @@ $ bash install.sh
 
 **First of all**: [Package Control](https://sublime.wbond.net)
 
-- [Advanced New File](https://sublime.wbond.net/packages/AdvancedNewFile)
-- [RubyTest](https://sublime.wbond.net/packages/RubyTest)
-- [Ruby Slim](https://sublime.wbond.net/packages/Ruby%20Slim)
-- [Rails Partial](https://sublime.wbond.net/packages/Rails%20Partial)
-- [Markdown Editing](https://sublime.wbond.net/packages/MarkdownEditing)
-- [Sublime Linter](http://sublimelinter.readthedocs.org)
-- [Sublime Linter Ruby](https://sublime.wbond.net/packages/SublimeLinter-ruby)
-- [Sublime Linter JSHint](https://sublime.wbond.net/packages/SublimeLinter-jshint). Has a dependencie: `npm install -g jshint`
-- [Sidebar Enhancements](https://sublime.wbond.net/packages/SideBarEnhancements)
-- [Alignment](http://wbond.net/sublime_packages/alignment)
-- [Color​Picker](https://sublime.wbond.net/packages/ColorPicker)
-- [GitGutter](https://sublime.wbond.net/packages/GitGutter)
-- [Pretty JSON](https://sublime.wbond.net/packages/Pretty%20JSON)
-- [Inline Google Translate](https://sublime.wbond.net/packages/Inline%20Google%20Translate)
+- [Advanced New File](https://packagecontrol.io/packages/AdvancedNewFile)
+- [Alignment](https://packagecontrol.io/packages/Alignment)
+- [Color​Picker](https://packagecontrol.io/packages/ColorPicker)
+- [Emmet](https://packagecontrol.io/packages/Emmet)
+- [ERB Snippets](https://packagecontrol.io/packages/ERB%20Snippets)
+- [Git](https://packagecontrol.io/packages/Git)
+- [GitGutter](https://packagecontrol.io/packages/GitGutter)
+- [Markdown Editing](https://packagecontrol.io/packages/MarkdownEditing)
+- [Pretty JSON](https://packagecontrol.io/packages/Pretty%20JSON)
+- [Rails Partial](https://packagecontrol.io/packages/Rails%20Partial)
+- [RubyTest](https://packagecontrol.io/packages/RubyTest)
+- [Sidebar Enhancements](https://packagecontrol.io/packages/SideBarEnhancements)
+- [Sublime Linter](https://packagecontrol.io/packages/SublimeLinter)
+- [Sublime Linter JSHint](https://packagecontrol.io/packages/SublimeLinter-jshint). Has a dependencie: `npm install -g jshint`
+- [Sublime Linter Ruby](https://packagecontrol.io/packages/SublimeLinter-ruby)
+
+- [Theme - Space Gray](https://packagecontrol.io/packages/Theme%20-%20Spacegray)
+
+## Extras
+
+- I use the [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) font.
